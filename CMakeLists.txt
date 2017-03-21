@@ -1,13 +1,3 @@
-#rebuid seastar project if neccessary
-#execute_process(COMMAND ./configure.py WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-#execute_process(COMMAND ninja -C ${CMAKE_CURRENT_SOURCE_DIR})
-#
-#set(SEASTAR_LIB_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/build)
-#if (CMAKE_BUILD_TYPE MATCHES RELEASE)
-#set(SEASTAR_LIB_LOCATION ${SEASTAR_LIB_LOCATION}/release)
-#else ()
-#set(SEASTAR_LIB_LOCATION ${SEASTAR_LIB_LOCATION}/debug)
-#endif ()
 set(SEASTAR_LIB_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/build/release)
 
 find_package(PkgConfig REQUIRED)
